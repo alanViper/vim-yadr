@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -66,7 +66,9 @@ set tabstop=4
 "set expandtab
 set noexpandtab
 
-autocmd FileType python set noexpandtab
+autocmd FileType python set noexpandtab sw=4 sts=4 ts=4
+
+let g:syntastic_python_python_exec = 'python3'
 
 filetype plugin on
 filetype indent on
